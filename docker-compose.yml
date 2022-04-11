@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    build: .
+    tty: true
+    container_name: monkey
+    platform: linux/arm64
+    volumes:
+      - ./src:/go/src
